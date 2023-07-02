@@ -1,0 +1,8 @@
+{
+    "name": "Windows95Keygen",
+    "triggerCmd": "win95keygen",
+    "initFoo": "keyPicker",
+    "imports": [
+        ["addons.Win95keygen.main", "keyPicker"]
+    ]
+}

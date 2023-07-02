@@ -1,0 +1,8 @@
+{
+    "name": "Disklist",
+    "triggerCmd": "disklist",
+    "initFoo": "list_drives",
+    "imports": [
+        ["addons.Disklist.disklist", "list_drives"]
+    ]
+}

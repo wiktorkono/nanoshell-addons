@@ -1,0 +1,8 @@
+{
+    "name": "PowerSwitch",
+    "triggerCmd": "power",
+    "initFoo": "showPowerMenu",
+    "imports": [
+        ["addons.PowerSwitch.powerSwitch", "showPowerMenu"]
+    ]
+}
