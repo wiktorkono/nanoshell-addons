@@ -1,5 +1,8 @@
 {
     "name": "PowerSwitch",
+    "author": "Mihael2017",
+    "description": "Switch off, shut down, end your session with that power",
+    "addonVersion": "1.0.0",
     "triggerCmd": "power",
     "initFoo": "showPowerMenu",
     "imports": [

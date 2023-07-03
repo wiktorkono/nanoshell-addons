@@ -1,0 +1,11 @@
+{
+    "name": "ClearScreen",
+    "author": "Mihael2017",
+    "description": "Makin' world's screens' empty and fresh",
+    "addonVersion": "1.0.0",
+    "triggerCmd": "clear",
+    "initFoo": "clear",
+    "imports": [
+        ["addons.builtin.clear", "clear"]
+    ]
+}

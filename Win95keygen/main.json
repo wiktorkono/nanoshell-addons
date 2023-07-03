@@ -1,5 +1,8 @@
 {
     "name": "Windows95Keygen",
+    "author": "Mihael2017",
+    "description": "Generate different and actual Microsoft Windows 95 activation keys",
+    "addonVersion": "1.0.0",
     "triggerCmd": "win95keygen",
     "initFoo": "keyPicker",
     "imports": [

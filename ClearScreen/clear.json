@@ -1,8 +1,0 @@
-{
-    "name": "ClearScreen",
-    "triggerCmd": "clear",
-    "initFoo": "clear",
-    "imports": [
-        ["addons.ClearScreen.clear", "clear"]
-    ]
-}

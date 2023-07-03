@@ -1,5 +1,8 @@
 {
     "name": "CurrentUser",
+    "author": "Mihael2017",
+    "description": "Displays the current user name and the PC name",
+    "addonVersion": "1.0.0",
     "triggerCmd": "user",
     "initFoo": "showUser",
     "imports": [

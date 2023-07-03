@@ -1,5 +1,8 @@
 {
     "name": "Exit",
+    "author": "Kwadratz",
+    "description": "Exit nanoshell (use -s to exit instantly)",
+    "addonVersion": "1.0.0",
     "triggerCmd": "exit",
     "initFoo": "exit",
     "imports": [
