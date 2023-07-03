@@ -1,0 +1,8 @@
+{
+    "name": "CurrentUser",
+    "triggerCmd": "user",
+    "initFoo": "showUser",
+    "imports": [
+        ["addons.builtin.user", "showUser"]
+    ]
+}

@@ -1,8 +1,0 @@
-{
-    "name": "CurrentUser",
-    "triggerCmd": "user",
-    "initFoo": "showUser",
-    "imports": [
-        ["addons.CurrentUser.user", "showUser"]
-    ]
-}

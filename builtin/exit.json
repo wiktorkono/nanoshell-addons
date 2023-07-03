@@ -1,0 +1,8 @@
+{
+    "name": "Exit",
+    "triggerCmd": "exit",
+    "initFoo": "exit",
+    "imports": [
+        ["addons.builtin.exit", "exit"]
+    ]
+}
