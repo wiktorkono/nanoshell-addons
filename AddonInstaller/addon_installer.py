@@ -51,6 +51,7 @@ def menu():
         installer()
     else:
         os.system('cls' if os.name=='nt' else 'clear')
+        shutil.rmtree("./addons/AddonInstaller/addonsRepo")
         print("Unknown addon")
 
 def main(prompt):
