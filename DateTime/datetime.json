@@ -1,0 +1,11 @@
+{
+    "name": "DateTime",
+    "author": "Mihael2017",
+    "description": "Shows the current date and time.",
+    "addonVersion": "1.0.0",
+    "triggerCmd": "datetime",
+    "initFoo": "main",
+    "imports": [
+        ["addons.DateTime.datetime", "main"]
+    ]
+}
