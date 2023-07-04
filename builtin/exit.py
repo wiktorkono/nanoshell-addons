@@ -3,7 +3,6 @@ import os
 
 def clearFiles():
     with open(os.path.join("bin", "nanoshell-base.py"), "r") as f: nanoshellBase = f.read()
-    print(nanoshellBase)
     with open(os.path.join("nanoshell.py"), "w") as f: f.write(nanoshellBase)
     with open(os.path.join("imports.py"), "w") as f: f.write("")
 
