@@ -6,6 +6,6 @@
     "triggerCmd": "datetime",
     "initFoo": "main",
     "imports": [
-        ["addons.DateTime.datetime", "main"]
+        ["addons.builtin.datetime", "main"]
     ]
 }
