@@ -1,0 +1,11 @@
+{
+    "name": "Lock - Offboard for Windows",
+    "author": "Kwadratz",
+    "description": "Standalone lock command for Offboard",
+    "addonVersion": "1.0.0",
+    "triggerCmd": "lock",
+    "initFoo": "lock",
+    "imports": [
+        ["addons.offboardWin.offboard", "lock"]
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Restart - Offboard for Windows",
+    "author": "Kwadratz",
+    "description": "Standalone restart command for Offboard",
+    "addonVersion": "1.0.0",
+    "triggerCmd": "restart",
+    "initFoo": "restart",
+    "imports": [
+        ["addons.offboardWin.offboard", "restart"]
+    ]
+}
