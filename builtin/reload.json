@@ -6,6 +6,6 @@
     "triggerCmd": "reload",
     "initFoo": "main",
     "imports": [
-        ["addons.AddonReload.reload", "main"]
+        ["addons.builtin.reload", "main"]
     ]
 }
