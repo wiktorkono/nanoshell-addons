@@ -1,7 +1,10 @@
 import dload, shutil, os
 
 addonList = []
-pickedAddon = ""
+
+def checkForRequest(prompt):
+    if prompt != "install" or prompt != "install ": return prompt.replace("install ", "")
+    else: return ""
 
 def downloadRepo():
     print("Clone addons repo")
@@ -26,7 +29,7 @@ def cleanUp():
     shutil.rmtree("./addons/AddonInstaller/addonsRepo")
     print("Installation complete. Please exit Nanoshell and run 'run.py'.")
 
-def installer():
+def installer(pickedAddon):
     addonRelativePath = os.path.abspath(os.path.join("./addons/AddonInstaller/addonsRepo", pickedAddon))
     print(f"Picked addon relative path: {addonRelativePath}")
     destinationPath = os.path.abspath(os.path.join("./addons", pickedAddon))
@@ -48,13 +51,30 @@ def menu():
         print(addon)
     pickedAddon = input("\nEnter the name of the addon you'd like to install (case-sensitive!) > ")
     if pickedAddon in addonList:
-        installer()
+        installer(pickedAddon)
     else:
         os.system('cls' if os.name=='nt' else 'clear')
         shutil.rmtree("./addons/AddonInstaller/addonsRepo")
         print("Unknown addon")
 
+def installAddon(request):
+    if request != "":
+        if pickedAddon in addonList:
+            addonRelativePath = os.path.abspath(os.path.join("./addons/AddonInstaller/addonsRepo", pickedAddon)) # pick addon relative path
+            destinationPath = os.path.abspath(os.path.join("./addons", pickedAddon)) # move picked addon to addons/
+            if os.path.exists(destinationPath):
+                print("Destination path already exists. Deleting existing directory.")
+                shutil.rmtree(destinationPath)
+            shutil.copytree(addonRelativePath, destinationPath)
+            cleanUp()
+            print("Delete cloned addons repo")
+            shutil.rmtree("./addons/AddonInstaller/addonsRepo")
+            print("Installation complete")
+            userInput = input("Do you want to reload Nanoshell now? Y N")
+
 def main(prompt):
+    addonRequest = checkForRequest(prompt)
     downloadRepo()
     fetchAddons()
-    menu()
+    if addonRequest == "": menu()
+    else: installAddon(addonRequest)
