@@ -6,6 +6,6 @@
     "triggerCmd": "install",
     "initFoo": "main",
     "imports": [
-        ["addons.AddonInstaller.addon_installer", "main"]
+        ["addons.builtin.addon_installer", "main"]
     ]
 }
