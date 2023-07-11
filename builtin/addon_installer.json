@@ -1,0 +1,11 @@
+{
+    "name": "AddonInstaller",
+    "author": "Mihael2017",
+    "description": "Easy to use addon installer for Nanoshell",
+    "addonVersion": "1.0.0",
+    "triggerCmd": "install",
+    "initFoo": "main",
+    "imports": [
+        ["addons.AddonInstaller.addon_installer", "main"]
+    ]
+}
