@@ -2,7 +2,7 @@
     "name": "AddonInstaller",
     "author": "Mihael2017",
     "description": "Easy to use addon installer for Nanoshell",
-    "addonVersion": "1.0.1",
+    "addonVersion": "1.0.2",
     "triggerCmd": "install",
     "initFoo": "main",
     "imports": [

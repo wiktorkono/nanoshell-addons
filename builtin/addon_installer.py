@@ -51,7 +51,10 @@ def menu():
     pickedAddon = input(f"\nEnter the name of the addon you'd like to install {dim}>{r} ")
     if pickedAddon != "":
         if pickedAddon in addonList:
-            installAddon(pickedAddon)
+            if pickedAddon == "builtin":
+                print("AddonInstaller currently isn't able to install builtin. We're working on ways to fix this issue.")
+            else:
+                installAddon(pickedAddon)
         else:
             os.system('cls' if os.name=='nt' else 'clear')
             shutil.rmtree("./addons/builtin/addonsRepo")
@@ -78,4 +81,8 @@ def main(prompt):
     if addonRequest == "":
         menu()
     else:
-        installAddon(addonRequest)
+        if addonRequest in addonList:
+            if addonRequest == "builtin":
+                print("AddonInstaller currently isn't able to install builtin. We're working on ways to fix this issue.")
+            else:
+                installAddon(addonRequest)
