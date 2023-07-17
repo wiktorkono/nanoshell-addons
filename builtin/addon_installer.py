@@ -74,7 +74,7 @@ def installAddon(request):
         print(f"{r}{dim}To apply changes, restart or reload your Nanoshell instance ('reload' command){r}")
 
 
-def main(prompt):
+def startInstaller(prompt):
     addonRequest = checkForRequest(prompt)
     downloadRepo()
     fetchAddons()
