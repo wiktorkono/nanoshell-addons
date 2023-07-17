@@ -1,0 +1,11 @@
+{
+    "name": "File Counter",
+    "author": "Mihael2017",
+    "description": "Count how many files there are on your system.",
+    "addonVersion": "1.0.0",
+    "triggerCmd": "filecount",
+    "initFoo": "countConfirmation",
+    "imports": [
+        ["addons.FileCounter.file_counter", "countConfirmation"]
+    ]
+}
