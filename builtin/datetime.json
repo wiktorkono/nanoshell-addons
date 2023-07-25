@@ -4,8 +4,8 @@
     "description": "Shows the current date and time.",
     "addonVersion": "1.0.0",
     "triggerCmd": "datetime",
-    "initFoo": "main",
+    "initFoo": "showDateTime",
     "imports": [
-        ["addons.builtin.datetime", "main"]
+        ["addons.builtin.datetime", "showDateTime"]
     ]
 }
