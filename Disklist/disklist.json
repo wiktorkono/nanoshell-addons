@@ -1,7 +1,7 @@
 {
     "name": "Disklist",
     "author": "Mihael2017",
-    "description": "Shows you all of accessible disks",
+    "description": "Lists all accessible disks.",
     "addonVersion": "1.0.0",
     "triggerCmd": "disklist",
     "initFoo": "list_drives",
