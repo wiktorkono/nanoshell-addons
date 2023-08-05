@@ -2,7 +2,7 @@
     "name": "DateTime",
     "author": "Mihael2017",
     "description": "Shows the current date and time.",
-    "addonVersion": "1.0.0",
+    "addonVersion": "1.0.1",
     "triggerCmd": "datetime",
     "initFoo": "showDateTime",
     "imports": [
