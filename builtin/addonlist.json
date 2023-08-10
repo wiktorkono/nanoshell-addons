@@ -6,6 +6,6 @@
     "triggerCmd": "addonlist",
     "initFoo": "addonListMain",
     "imports": [
-        ["addons.AddonList.addonlist", "addonListMain"]
+        ["addons.builtin.addonlist", "addonListMain"]
     ]
 }
