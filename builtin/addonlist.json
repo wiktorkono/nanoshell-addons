@@ -1,0 +1,11 @@
+{
+    "name": "AddonList",
+    "author": "Mihael2017",
+    "description": "Lists all installed addons.",
+    "addonVersion": "1.0.0",
+    "triggerCmd": "addonlist",
+    "initFoo": "addonListMain",
+    "imports": [
+        ["addons.AddonList.addonlist", "addonListMain"]
+    ]
+}
