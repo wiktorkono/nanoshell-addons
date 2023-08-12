@@ -49,3 +49,4 @@ def main(prompt):
 
     print("Finished, reloading Nanoshell...")
     os.system("python nanoshell.py")
+    quit()
