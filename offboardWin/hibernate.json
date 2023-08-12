@@ -1,8 +1,4 @@
 {
-    "name": "Hibernate - Offboard for Windows",
-    "author": "Kwadratz",
-    "description": "Standalone hibernate command for Offboard",
-    "addonVersion": "1.0.0",
     "triggerCmd": "hibernate",
     "initFoo": "hibernate",
     "imports": [
