@@ -104,7 +104,7 @@ def uninstallAddon(pickedAddon):
 def uninstallMenu():
     installed_addons = getInstalledAddons()
     os.system("cls")
-    print(f"{r}{c}Addon Uninstaller")
+    print(f"{r}{a}Addon Uninstaller")
     print(f"{r}Listing all addons:\n")
     for addon in installed_addons:
         print(dim + addon + r)
@@ -120,8 +120,8 @@ def uninstallMenu():
 def listAddons():
     addons_list = getInstalledAddons()
     total = getInstalledAddons(True)
-    print(f"{c}Installed addons{r}{dim} ({total} total)")
+    print(f"{a}Installed addons{r}{dim} ({total} total)")
     for addon in addons_list:
         print(f"{dim}\t{addon}{r}")
-    print(f"{dim}You can update your addons by typing{r}{c} addons update{r}")
-    print(f"{dim}Not needing any of these? Type {r}{c}addons uninstall {white}<name>{r}")
+    print(f"{dim}You can update your addons by typing{r}{a} addons update{r}")
+    print(f"{dim}Not needing any of these? Type {r}{a}addons uninstall {white}<name>{r}")
