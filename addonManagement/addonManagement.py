@@ -84,7 +84,7 @@ def installAddon(request):
             shutil.rmtree(destinationPath)
         shutil.copytree(addonRelativePath, destinationPath)
         cleanUp()
-        print(f"{r}{c}Successfully installed {request}")
+        print(f"{r}{a}Successfully installed {request}")
         print(f"{r}{dim}To apply changes, restart or reload your Nanoshell instance ('reload' command){r}")
 
 # UNINSTALL
