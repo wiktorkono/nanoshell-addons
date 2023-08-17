@@ -1,0 +1,11 @@
+{
+    "name": "Photo Viewer",
+    "author": "Mihael2017",
+    "description": "View and navigate through images.",
+    "addonVersion": "1.0.0",
+    "triggerCmd": "photoview",
+    "initFoo": "photoview",
+    "imports": [
+        ["addons.photoView.photoView", "photoview"]
+    ]
+}
