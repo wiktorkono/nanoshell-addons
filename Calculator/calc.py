@@ -3,6 +3,6 @@ def calculate(expression):
     try:
         print(eval(expression))
     except (SyntaxError, NameError, TypeError) as e:
-        print("Invalid expression: " + str(e))
+        print(f"Invalid expression: {e}")
     except ZeroDivisionError:
-        print("Division by zero is not allowed. ")
+        print("Division by zero is not allowed.")

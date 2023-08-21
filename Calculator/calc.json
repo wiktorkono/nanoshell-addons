@@ -2,7 +2,7 @@
     "name": "Calculator",
     "author": "Mihael2017",
     "description": "Simple calculator that takes the argument as an expression",
-    "addonVersion": "1.0.0",
+    "addonVersion": "1.0.1",
     "triggerCmd": "calc",
     "initFoo": "calculate",
     "imports": [
