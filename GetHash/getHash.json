@@ -2,10 +2,10 @@
     "name": "GetHash",
     "author": "Mihael2017",
     "description": "Get the hash of any file on your system.",
-    "addonVersion": "1.0.0",
+    "addonVersion": "1.0.1",
     "triggerCmd": "gethash",
-    "initFoo": "obtainHash",
+    "initFoo": "obtain_hash",
     "imports": [
-        ["addons.GetHash.getHash", "obtainHash"]
+        ["addons.GetHash.getHash", "obtain_hash"]
     ]
 }
