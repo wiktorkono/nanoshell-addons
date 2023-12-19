@@ -5,6 +5,7 @@
     "addonVersion": "1.0.1",
     "triggerCmd": "gethash",
     "initFoo": "obtain_hash",
+    "platform": "all",
     "imports": [
         ["addons.GetHash.getHash", "obtain_hash"]
     ]

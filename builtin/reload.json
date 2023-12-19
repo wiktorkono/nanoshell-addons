@@ -2,9 +2,10 @@
     "name": "AddonReload",
     "author": "Mihael2017",
     "description": "Reloads all addons without exiting Nanoshell.",
-    "addonVersion": "1.0.1",
+    "addonVersion": "1.0.0",
     "triggerCmd": "reload",
     "initFoo": "main",
+    "platform": "all",
     "imports": [
         ["addons.builtin.reload", "main"]
     ]

@@ -5,6 +5,7 @@
     "addonVersion": "1.0.0",
     "triggerCmd": "exit",
     "initFoo": "exit",
+    "platform": "all",
     "imports": [
         ["addons.builtin.exit", "exit"]
     ]

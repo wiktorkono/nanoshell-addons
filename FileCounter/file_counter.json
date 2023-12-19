@@ -5,6 +5,7 @@
     "addonVersion": "1.0.0",
     "triggerCmd": "filecount",
     "initFoo": "countConfirmation",
+    "platform": "win",
     "imports": [
         ["addons.FileCounter.file_counter", "countConfirmation"]
     ]

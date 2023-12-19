@@ -5,6 +5,7 @@
     "addonVersion": "1.0.0",
     "triggerCmd": "user",
     "initFoo": "showUser",
+    "platform": "win",
     "imports": [
         ["addons.builtin.user", "showUser"]
     ]
