@@ -1,6 +1,11 @@
 {
+    "name": "Shutdown from Offboard",
+    "author": "Kwadratz",
+    "description": "Shut down your system",
+    "addonVersion": "1.0.0",
     "triggerCmd": "shutdown",
     "initFoo": "shutdown",
+    "platform": "win",
     "imports": [
         ["addons.offboardWin.offboard", "shutdown"]
     ]

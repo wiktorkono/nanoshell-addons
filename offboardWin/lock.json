@@ -1,6 +1,11 @@
 {
+    "name": "Lock from Offboard",
+    "author": "Kwadratz",
+    "description": "Lock your system",
+    "addonVersion": "1.0.0",
     "triggerCmd": "lock",
     "initFoo": "lock",
+    "platform": "win",
     "imports": [
         ["addons.offboardWin.offboard", "lock"]
     ]

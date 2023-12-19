@@ -5,6 +5,7 @@
     "addonVersion": "1.0.0",
     "triggerCmd": "clear",
     "initFoo": "clear",
+    "platform": "all",
     "imports": [
         ["addons.builtin.clear", "clear"]
     ]

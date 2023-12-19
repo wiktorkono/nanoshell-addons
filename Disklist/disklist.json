@@ -5,6 +5,7 @@
     "addonVersion": "1.0.0",
     "triggerCmd": "disklist",
     "initFoo": "list_drives",
+    "platform": "win",
     "imports": [
         ["addons.Disklist.disklist", "list_drives"]
     ]

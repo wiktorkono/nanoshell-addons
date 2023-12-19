@@ -1,6 +1,11 @@
 {
+    "name": "Restart from Offboard",
+    "author": "Kwadratz",
+    "description": "Restart your system",
+    "addonVersion": "1.0.0",
     "triggerCmd": "restart",
     "initFoo": "restart",
+    "platform": "win",
     "imports": [
         ["addons.offboardWin.offboard", "restart"]
     ]

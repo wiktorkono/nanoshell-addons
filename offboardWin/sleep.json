@@ -1,6 +1,11 @@
 {
+    "name": "Sleep from Offboard",
+    "author": "Kwadratz",
+    "description": "Put your system into sleep",
+    "addonVersion": "1.0.0",
     "triggerCmd": "sleep",
     "initFoo": "sleep",
+    "platform": "win",
     "imports": [
         ["addons.offboardWin.offboard", "sleep"]
     ]
