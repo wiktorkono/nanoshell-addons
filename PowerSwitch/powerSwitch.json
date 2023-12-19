@@ -5,6 +5,7 @@
     "addonVersion": "1.0.0",
     "triggerCmd": "power",
     "initFoo": "showPowerMenu",
+    "platform": "win",
     "imports": [
         ["addons.PowerSwitch.powerSwitch", "showPowerMenu"]
     ]

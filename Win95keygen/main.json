@@ -5,6 +5,7 @@
     "addonVersion": "1.0.1",
     "triggerCmd": "win95keygen",
     "initFoo": "keyPicker",
+    "platform": "all",
     "imports": [
         ["addons.Win95keygen.main", "keyPicker"]
     ]

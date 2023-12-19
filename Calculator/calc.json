@@ -5,6 +5,7 @@
     "addonVersion": "1.0.1",
     "triggerCmd": "calc",
     "initFoo": "calculate",
+    "platform": "all",
     "imports": [
         ["addons.Calculator.calc", "calculate"]
     ]

@@ -5,6 +5,7 @@
     "addonVersion": "1.0.0",
     "triggerCmd": "photoview",
     "initFoo": "photoview",
+    "platform": "win",
     "imports": [
         ["addons.photoView.photoView", "photoview"]
     ]
