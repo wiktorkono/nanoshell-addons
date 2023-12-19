@@ -1,6 +1,11 @@
 {
+    "name": "Hibernate from Offboard",
+    "author": "Kwadratz",
+    "description": "Hibernate your system",
+    "addonVersion": "1.0.0",
     "triggerCmd": "hibernate",
     "initFoo": "hibernate",
+    "platform": "win",
     "imports": [
         ["addons.offboardWin.offboard", "hibernate"]
     ]

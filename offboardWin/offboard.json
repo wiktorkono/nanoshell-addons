@@ -1,6 +1,11 @@
 {
+    "name": "Offboard for Windows",
+    "author": "Kwadratz",
+    "description": "Shutting down straight from Nanoshell, made easier (version for Windows 10+)",
+    "addonVersion": "1.0.0",
     "triggerCmd": "off",
     "initFoo": "launchOffboard",
+    "platform": "win",
     "imports": [
         ["addons.offboardWin.offboard", "launchOffboard"]
     ]
