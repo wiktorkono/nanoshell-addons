@@ -2,9 +2,10 @@
     "name": "Addon Management",
     "author": "Mihael2017, Kwadratz",
     "description": "All-in-one addon management tool for Nanoshell",
-    "addonVersion": "1.0.0",
+    "addonVersion": "1.0.1",
     "triggerCmd": "addons",
     "initFoo": "mainAddonMng",
+    "platform": "all",
     "imports": [
         ["addons.addonManagement.addonManagement", "mainAddonMng"]
     ]
