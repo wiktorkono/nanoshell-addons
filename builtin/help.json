@@ -1,0 +1,12 @@
+{
+    "name": "Help",
+    "author": "Hansquare",
+    "description": "Lists all available commands",
+    "addonVersion": "1.0.0",
+    "triggerCmd": "help",
+    "initFoo": "main",
+    "platform": "all",
+    "imports": [
+        ["addons.builtin.help", "main"]
+    ]
+}
