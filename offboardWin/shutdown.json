@@ -1,6 +1,6 @@
 {
     "name": "Shutdown from Offboard",
-    "author": "Kwadratz",
+    "author": "Hansquare",
     "description": "Shut down your system",
     "addonVersion": "1.0.0",
     "triggerCmd": "shutdown",

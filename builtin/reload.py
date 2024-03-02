@@ -71,3 +71,4 @@ def main(prompt):
 
     print("Finished, executing Nanoshell...")
     os.system("python nanoshell.py")
+    exit()

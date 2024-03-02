@@ -1,6 +1,6 @@
 {
     "name": "Restart from Offboard",
-    "author": "Kwadratz",
+    "author": "Hansquare",
     "description": "Restart your system",
     "addonVersion": "1.0.0",
     "triggerCmd": "restart",

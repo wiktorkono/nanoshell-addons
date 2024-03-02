@@ -1,6 +1,6 @@
 {
     "name": "Offboard for Windows",
-    "author": "Kwadratz",
+    "author": "Hansquare",
     "description": "Shutting down straight from Nanoshell, made easier (version for Windows 10+)",
     "addonVersion": "1.0.0",
     "triggerCmd": "off",

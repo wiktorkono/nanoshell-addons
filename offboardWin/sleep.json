@@ -1,6 +1,6 @@
 {
     "name": "Sleep from Offboard",
-    "author": "Kwadratz",
+    "author": "Hansquare",
     "description": "Put your system into sleep",
     "addonVersion": "1.0.0",
     "triggerCmd": "sleep",

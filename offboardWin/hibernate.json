@@ -1,6 +1,6 @@
 {
     "name": "Hibernate from Offboard",
-    "author": "Kwadratz",
+    "author": "Hansquare",
     "description": "Hibernate your system",
     "addonVersion": "1.0.0",
     "triggerCmd": "hibernate",

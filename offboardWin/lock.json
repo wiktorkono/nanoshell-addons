@@ -1,6 +1,6 @@
 {
     "name": "Lock from Offboard",
-    "author": "Kwadratz",
+    "author": "Hansquare",
     "description": "Lock your system",
     "addonVersion": "1.0.0",
     "triggerCmd": "lock",
