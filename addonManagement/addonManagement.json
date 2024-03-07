@@ -1,6 +1,6 @@
 {
     "name": "Addon Management",
-    "author": "Mihael2017, Hansquare",
+    "author": "jajtic, Hansquare",
     "description": "All-in-one addon management tool for Nanoshell",
     "addonVersion": "1.0.1",
     "triggerCmd": "addons",

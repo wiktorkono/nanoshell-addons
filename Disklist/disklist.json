@@ -1,6 +1,6 @@
 {
     "name": "Disklist",
-    "author": "Mihael2017",
+    "author": "jajtic",
     "description": "Lists all accessible disks.",
     "addonVersion": "1.0.0",
     "triggerCmd": "disklist",

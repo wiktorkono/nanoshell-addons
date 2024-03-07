@@ -1,6 +1,6 @@
 {
     "name": "GetHash",
-    "author": "Mihael2017",
+    "author": "jajtic",
     "description": "Get the hash of any file on your system.",
     "addonVersion": "1.0.1",
     "triggerCmd": "gethash",

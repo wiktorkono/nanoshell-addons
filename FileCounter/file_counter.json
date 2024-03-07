@@ -1,6 +1,6 @@
 {
     "name": "File Counter",
-    "author": "Mihael2017",
+    "author": "jajtic",
     "description": "Count how many files there are on your system.",
     "addonVersion": "1.0.0",
     "triggerCmd": "filecount",

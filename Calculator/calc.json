@@ -1,6 +1,6 @@
 {
     "name": "Calculator",
-    "author": "Mihael2017",
+    "author": "jajtic",
     "description": "Simple calculator that takes the argument as an expression",
     "addonVersion": "1.0.1",
     "triggerCmd": "calc",
