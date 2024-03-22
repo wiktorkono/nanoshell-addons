@@ -1,0 +1,12 @@
+{
+    "name": "Settings",
+    "author": "Hansquare",
+    "description": "Set it up, customise your Nanoshell experience",
+    "addonVersion": "1.0.0",
+    "triggerCmd": "settings",
+    "initFoo": "settings",
+    "platform": "all",
+    "imports": [
+        ["addons.builtin.settings", "settings"]
+    ]
+}
