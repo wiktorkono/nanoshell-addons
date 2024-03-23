@@ -5,6 +5,7 @@ def clearFiles():
     with open(os.path.join("bin", "nanoshell-base.py"), "r") as f: nanoshellBase = f.read()
     with open(os.path.join("nanoshell.py"), "w") as f: f.write(nanoshellBase)
     with open(os.path.join("imports.py"), "w") as f: f.write("")
+    with open("bin/coloramasetup.py", "w") as f: f.write("")
 
 def exit(prompt):
     if "-kf" in prompt: clear = False # kp means keepFiles

@@ -39,6 +39,14 @@ def main(prompt):
     with open("nanoshell.py", "w") as f:
         f.write(nanoshellBase)  # writing the main file
 
+    print("Applying configs...")
+    with open("config/preferences.json", "r") as f:
+        f = json.load(f)
+        a = f["accentColor"]
+    with open("bin/coloramasetup-base.py", "r") as f: coloramasetup = f.read()
+    with open("bin/coloramasetup.py", "w") as f: f.write(coloramasetup)
+    with open("bin/coloramasetup.py", "a") as f: f.write(f"\na = {a}")
+
     print("Loading addons (part 1)...")
     with open("nanoshell.py", "a") as f:  # here nanoshell.py is being initialized
         i = 0

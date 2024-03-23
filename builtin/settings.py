@@ -1,4 +1,4 @@
-import os
+import os, json
 from bin.coloramasetup import *
 
 def settings(prompt):
@@ -36,18 +36,7 @@ def changeAccent():
         case other: settings("")
 
 def setAccent(color):
-    with open("bin/coloramasetup.py", "w") as f:
-        f.write(f"""from colorama import Fore as c
-from colorama import Back as bg
-from colorama import Style as s
-
-white = c.WHITE
-dim = s.DIM
-bright = s.BRIGHT
-green = c.GREEN
-light_green = c.LIGHTGREEN_EX
-red = c.RED
-a = {color}
-r = s.RESET_ALL""")
-        f.close()
+    with open("config/preferences.json", "r") as f: file = json.load(f)
+    file["accentColor"] = color
+    with open("config/preferences.json", "w") as f: f.write(json.dumps(file))
     print(f"{red}You'll have to reload Nanoshell to apply changes. {r}{dim}Type 'reload'{r}")

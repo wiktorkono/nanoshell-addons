@@ -2,7 +2,7 @@
     "name": "Settings",
     "author": "Hansquare",
     "description": "Set it up, customise your Nanoshell experience",
-    "addonVersion": "1.0.0",
+    "addonVersion": "1.0.1",
     "triggerCmd": "settings",
     "initFoo": "settings",
     "platform": "all",
