@@ -76,7 +76,7 @@ def installer(pickedAddon):
 
 def installMenu():
     os.system('cls' if os.name == 'nt' else 'clear')
-    print(f"{r}{green}Addon Installer")
+    print(f"{r}{a}Addon Installer")
     print(f"{r}Listing all addons:\n")
     for addon in addonList:
         print(dim + addon + r)
