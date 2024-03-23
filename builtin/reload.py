@@ -70,5 +70,5 @@ def main(prompt):
                 f.write(f"\nfrom {importLine[0]} import {importLine[1]} as {addon[2]}")
 
     print("Finished, executing Nanoshell...")
-    os.system("python nanoshell.py")
+    os.system("python3 nanoshell.py")
     exit()

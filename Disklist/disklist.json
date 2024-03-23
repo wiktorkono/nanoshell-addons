@@ -2,7 +2,7 @@
     "name": "Disklist",
     "author": "jajtic",
     "description": "Lists all accessible disks.",
-    "addonVersion": "1.0.0",
+    "addonVersion": "1.0.1",
     "triggerCmd": "disklist",
     "initFoo": "list_drives",
     "platform": "win",
