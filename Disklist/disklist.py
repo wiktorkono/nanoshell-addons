@@ -1,4 +1,17 @@
-import os, win32api, win32file, shutil
+import os
+from colorama import Fore as c
+from colorama import Back as bg
+from colorama import Style as s
+color_red = c.RED
+color_reset = s.RESET_ALL
+
+# get system platform
+system_platform = os.name
+if system_platform != "nt":
+    print(f"{color_red}ERROR{color_reset} - addon 'Disklist' (/addons/Disklist) {color_red}can not run on platform '{system_platform}'{color_reset}. Please remove it from your nanoshell installation.")
+    exit()
+
+import win32api, win32file, shutil
 from tabulate import tabulate
 
 def driveExists(drive_letter):
