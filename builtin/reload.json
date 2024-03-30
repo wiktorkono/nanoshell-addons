@@ -1,8 +1,8 @@
 {
     "name": "AddonReload",
-    "author": "jajtic",
+    "author": "Mihael2017",
     "description": "Reloads all addons without exiting Nanoshell.",
-    "addonVersion": "1.0.2",
+    "addonVersion": "1.0.1",
     "triggerCmd": "reload",
     "initFoo": "main",
     "platform": "all",

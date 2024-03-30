@@ -1,6 +1,6 @@
 {
     "name": "ClearScreen",
-    "author": "Mihael2017",
+    "author": "jajtic",
     "description": "Makin' world's screens' empty and fresh",
     "addonVersion": "1.0.0",
     "triggerCmd": "clear",
