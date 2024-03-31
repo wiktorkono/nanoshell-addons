@@ -2,11 +2,11 @@
     "name": "Windows95Keygen",
     "author": "jajtic",
     "description": "Generate different and actual Microsoft Windows 95 activation keys",
-    "addonVersion": "1.0.1",
+    "addonVersion": "1.0.2",
     "triggerCmd": "win95keygen",
     "initFoo": "keyPicker",
     "platform": "all",
     "imports": [
-        ["addons.Win95keygen.main", "keyPicker"]
+        ["addons.Win95keygen.w95kg", "keyPicker"]
     ]
 }
