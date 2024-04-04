@@ -14,8 +14,8 @@ def exit(prompt):
         if clear: clearFiles()
         quit()
     else:
-        answer = input(f"{c.RED}Are you sure you want to exit?{r} {bg.RED}{c.WHITE}Y{r} {bg.RED}{c.WHITE}N{r} {c.LIGHTWHITE_EX}> {r}")
-        answers = ["y", "Y", "yes", "t"]
+        answer = input(f"{c.RED}Are you sure you want to exit?{r} {bg.RED}{c.WHITE}Y{r} {bg.RED}{c.WHITE}n{r} {c.LIGHTWHITE_EX}> {r}")
+        answers = ["y", "Y", "yes", "t", ""]
         if answer in answers: 
             if clear: clearFiles()
             quit()
