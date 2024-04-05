@@ -1,4 +1,5 @@
-import dload, shutil, os
+import os
+import json
 from colorama import Fore, Style
 from bin.coloramasetup import *
 
@@ -26,6 +27,14 @@ def mainAddonMng(prompt):
             uninstallAddon(prompt)
     elif "list" in prompt or prompt == "addons":
         listAddons()
+    elif "ver" in prompt:
+        prompt = prompt.replace("ver", "")
+        prompt = prompt.replace("addons", "")
+        prompt = prompt.replace(" ", "")
+        if prompt == "":
+            listAddonVersions()
+        else:
+            getAddonVersion(prompt)
 
 
 def getInstalledAddons(total=False):
@@ -142,4 +151,93 @@ def listAddons():
     for addon in addons_list:
         print(f"{dim}\t{addon}{r}")
     print(f"{dim}You can update your addons by typing{r}{a} addons update{r}")
-    print(f"{dim}Not needing any of these? Type {r}{a}addons uninstall {white}<name>{r}")
+    print(f"{dim}Not needing any of these? Type {r}{a}addons uninstall {white}[name]{r}")
+    print(f"{dim}Check the version of an addon: type {r}{a}addons ver {white}[name]")
+
+
+# VER
+
+
+def getAddonVersion(addon):
+    addons_path = os.path.join(os.path.dirname(__file__), "..")
+    addon_path = os.path.join(addons_path, addon)
+    
+    if not os.path.exists(addon_path):
+        print(f"Addon '{addon}' not found.")
+        return
+    
+    max_name_length = 0
+    max_version_length = 0
+    
+    for filename in os.listdir(addon_path):
+        if filename.endswith(".json"):
+            json_file_path = os.path.join(addon_path, filename)
+            try:
+                with open(json_file_path, 'r') as file:
+                    data = json.load(file)
+                    if "name" in data:
+                        addonFriendlyName = data['name']
+                        max_name_length = max(max_name_length, len(addonFriendlyName))
+                    if "addonVersion" in data:
+                        max_version_length = max(max_version_length, len(data['addonVersion']))
+                        print(f"{addon:<{max_name_length}} / {addonFriendlyName:<{max_name_length}} || {data['addonVersion']:<{max_version_length}}")
+            except json.JSONDecodeError:
+                print(f"Error loading JSON from {json_file_path}. The file might be empty or contain invalid JSON.")
+
+
+
+def listAddonVersions():
+    addons_path = os.path.join(os.path.dirname(__file__), "..")
+    max_name_length = 0
+    max_version_length = 0
+    
+    # find maximum lengths
+    for addon in os.listdir(addons_path):
+        addon_path = os.path.join(addons_path, addon)
+        if os.path.isdir(addon_path):
+            json_files = []
+            
+            for filename in os.listdir(addon_path):
+                if filename.endswith(".json"):
+                    json_files.append(filename)
+            
+            for json_file in json_files:
+                json_file_path = os.path.join(addon_path, json_file)
+                try:
+                    with open(json_file_path, 'r') as file:
+                        data = json.load(file)
+                        if "name" in data:
+                            addonFriendlyName = data['name']
+                            max_name_length = max(max_name_length, len(addonFriendlyName))
+                        if "addonVersion" in data:
+                            max_version_length = max(max_version_length, len(data['addonVersion']))
+                except json.JSONDecodeError:
+                    print(f"Error loading JSON from {json_file_path}. The file might be empty or contain invalid JSON.")
+    
+    # print the addon versions with aligned "||"
+    for addon in os.listdir(addons_path):
+        addon_path = os.path.join(addons_path, addon)
+        if os.path.isdir(addon_path):
+            json_files = []
+            
+            for filename in os.listdir(addon_path):
+                if filename.endswith(".json"):
+                    json_files.append(filename)
+            
+            for json_file in json_files:
+                json_file_path = os.path.join(addon_path, json_file)
+                try:
+                    with open(json_file_path, 'r') as file:
+                        data = json.load(file)
+                        if "name" in data:
+                            addonFriendlyName = data['name']
+                        else:
+                            print(f"{addon} / {json_file} ({json_file_path}) does not contain a 'name' key. (addon might be broken?)")
+                            continue # Skip to the next file if 'name' is missing
+                        if "addonVersion" in data:
+                            # Use the calculated maximum lengths for formatting
+                            print(f"{addon:<{max_name_length}} / {addonFriendlyName:<{max_name_length}} || {data['addonVersion']:<{max_version_length}}")
+                        else:
+                            print(f"{addon} / {json_file} ({json_file_path}) does not contain an 'addonVersion' key. (addon might be broken?)")
+                except json.JSONDecodeError:
+                    print(f"Error loading JSON from {json_file_path}. The file might be empty or contain invalid JSON.")
