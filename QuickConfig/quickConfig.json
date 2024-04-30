@@ -1,0 +1,12 @@
+{
+    "name": "QuickConfig",
+    "author": "jajtic",
+    "description": "Modify nanoshell settings using one command.",
+    "addonVersion": "1.0.0",
+    "triggerCmd": "config",
+    "initFoo": "argumentParser",
+    "platform": "all",
+    "imports": [
+        ["addons.QuickConfig.quickConfig", "argumentParser"]
+    ]
+}
