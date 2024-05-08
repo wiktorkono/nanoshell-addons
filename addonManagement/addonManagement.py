@@ -1,4 +1,4 @@
-import os
+import os, shutil, dload
 import json
 from colorama import Fore, Style
 from bin.coloramasetup import *
