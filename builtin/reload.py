@@ -39,10 +39,21 @@ def main(prompt):
     print(f"Found {howManyAddons} addons ({howManyScripts} scripts total)")
     print(f"Now listing addons: {addons}")
 
+    ## setting variables in the nanoshell library
+    print("Setting variables...")
+    with open(os.path.join("bin", "nanoshell_lib-base.py"), "r") as f:
+        nanoshellLibraryBase = f.read()
+        nanoshellLibraryBase = nanoshellLibraryBase.replace("{system-platform-placeholder}", f'"{system_platform}"')
+        nanoshellLibraryBase = nanoshellLibraryBase.replace("{nanoshell-addonCount-placeholder}", f'{howManyAddons}')
+        nanoshellLibraryBase = nanoshellLibraryBase.replace("{nanoshell-addonScriptCount-placeholder}", f'{howManyScripts}')
+        nanoshellLibraryBase = nanoshellLibraryBase.replace("{nanoshell-addonList-placeholder}", f'{addonList}')
+
+    print("Writing variables...")
+    with open(os.path.join("bin", "nanoshell_lib.py"), "w") as f: f.write(nanoshellLibraryBase)
+
     print("Reading the base file...")
     with open(os.path.join("bin", "nanoshell-base.py"), "r") as f:
-        nanoshellBase = f.read().replace("{platform-placeholder}", f'"{system_platform}"') #reading the base file and replacing platform placeholder
-
+        nanoshellBase = f.read()
 
     print("Writing the base file...")
     with open("nanoshell.py", "w") as f: f.write(nanoshellBase) #writing the main file
