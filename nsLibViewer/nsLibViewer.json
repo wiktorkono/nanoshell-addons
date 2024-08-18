@@ -1,0 +1,12 @@
+{
+    "name": "Nanoshell Library Viewer",
+    "author": "jajtic",
+    "description": "View values of variables provided by the Nanoshell library.",
+    "addonVersion": "1.0.0",
+    "triggerCmd": "nslib",
+    "initFoo": "nsLibViewer",
+    "platform": "all",
+    "imports": [
+        ["addons.nsLibViewer.nsLibViewer", "nsLibViewer"]
+    ]
+}
