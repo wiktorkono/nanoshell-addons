@@ -2,6 +2,8 @@ import os, json
 import platform as platfrm
 
 def main(prompt):
+    system_distro_name = "Unavailable"
+
     # get system platform
     system_platform = platfrm.system()
     if system_platform == "Windows":
@@ -12,6 +14,17 @@ def main(prompt):
         system_platform = "darwin"
     else:
         system_platform = "unknown"
+
+    # if on linux, get distro ID
+    if system_platform == "linux":
+        try:
+            with open("/etc/os-release") as f:
+                for line in f:
+                    if line.startswith("ID="):
+                        system_distro_name = line.strip().split("=")[1].strip('"')
+        except:
+            print("Something went wrong while attempting to get linux distro name")
+            system_distro_name = "Unavailable"
 
     print("Searching for addons...")
     addonList = [] #[0 name, 1 triggerCmd, 2 initFoo, 3 imports, 4 platform]
@@ -47,6 +60,7 @@ def main(prompt):
         nanoshellLibraryBase = nanoshellLibraryBase.replace("{nanoshell-addonCount-placeholder}", f'{howManyAddons}')
         nanoshellLibraryBase = nanoshellLibraryBase.replace("{nanoshell-addonScriptCount-placeholder}", f'{howManyScripts}')
         nanoshellLibraryBase = nanoshellLibraryBase.replace("{nanoshell-addonList-placeholder}", f'{addonList}')
+        nanoshellLibraryBase = nanoshellLibraryBase.replace("{system-linux-distro-id-placeholder}", f'"{system_distro_name}"')
 
     print("Writing variables...")
     with open(os.path.join("bin", "nanoshell_lib.py"), "w") as f: f.write(nanoshellLibraryBase)
