@@ -2,7 +2,7 @@
     "name": "Nanoshell Library Viewer",
     "author": "jajtic",
     "description": "View values of variables provided by the Nanoshell library.",
-    "addonVersion": "1.0.0",
+    "addonVersion": "1.0.1",
     "triggerCmd": "nslib",
     "initFoo": "nsLibViewer",
     "platform": "all",
