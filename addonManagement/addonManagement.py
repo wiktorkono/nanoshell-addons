@@ -2,6 +2,7 @@ import os, shutil, dload
 import json
 from colorama import Fore, Style
 from bin.coloramasetup import *
+from addons.addonManagement.addonUpdate import addonUpdateBegin
 
 addonList = []
 
@@ -35,6 +36,14 @@ def mainAddonMng(prompt):
             listAddonVersions()
         else:
             getAddonVersion(prompt)
+    elif "update" in prompt:
+        prompt = prompt.replace("update", "")
+        prompt = prompt.replace("addons", "")
+        prompt = prompt.replace(" ", "")
+        if prompt == "":
+            addonUpdateBegin()
+        else:
+            print("Arguments are not supported for 'addons update', yet :(") #better fix this soon
 
 
 def getInstalledAddons(total=False):

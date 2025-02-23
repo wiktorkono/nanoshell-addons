@@ -2,7 +2,7 @@
     "name": "Addon Management",
     "author": "jajtic, Hansquare",
     "description": "All-in-one addon management tool for Nanoshell",
-    "addonVersion": "1.0.2",
+    "addonVersion": "1.0.3",
     "triggerCmd": "addons",
     "initFoo": "mainAddonMng",
     "platform": "all",
